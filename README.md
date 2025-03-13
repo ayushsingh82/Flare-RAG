@@ -1,12 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Flare Data Verification 🚀**  
 
-## Expanding the ESLint configuration
+### **🔍 Overview**  
+Flare Data Verification is a system that validates off-chain data using multiple LLMs (Large Language Models) and Trusted Execution Environments (TEEs). The system fetches external data, runs computations on it, and determines its accuracy before presenting a verifiable proof.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## **🛠️ How It Works**  
+
+### **1️⃣ Data Ingestion**  
+- Off-chain data (news, finance, weather, research, etc.) is fetched from APIs.  
+- Multiple sources are compared for accuracy.  
+
+### **2️⃣ Computation Using LLMs**  
+- Different LLMs (GPT-4, Mistral, LLaMA, Command R+) analyze the data.  
+- They check for **consistency, credibility, and source validation**.  
+
+### **3️⃣ Verification via TEEs & ZK-Proofs**  
+- A **TEE (Trusted Execution Environment)** ensures secure computation.  
+- **ZK-Proofs (Zero-Knowledge Proofs)** validate the result without revealing full data.  
+
+### **4️⃣ Result & On-Chain Proof**  
+- If data is verified, it is marked ✅ **Correct**.  
+- If data is unreliable, it is marked ❌ **Incorrect**.  
+- A cryptographic proof is generated and stored on-chain.  
+
+---
+
+## **📊 System Flow**  
+```
+[ Off-Chain Data ] → [ LLM Computation ] → [ TEE Secure Verification ] → [ Proof Generation ] → [ On-Chain Storage ]
+```
+### **Diagram Representation:**  
+```plaintext
+1️⃣ Fetch Off-Chain Data 
+      ⬇  
+2️⃣ Process with LLMs  
+      ⬇  
+3️⃣ Verify using TEE & ZK-Proofs  
+      ⬇  
+4️⃣ Store Proof on Blockchain  
+```
+
+---
+
+## **🔗 Use Cases**  
+✅ **Fact-Checking** – Verify news articles against multiple sources.  
+✅ **Financial Data Verification** – Ensure accurate stock prices & crypto data.  
+✅ **Supply Chain Tracking** – Authenticate product origin & details.  
+✅ **Academic Paper Validation** – Confirm research legitimacy.  
+
+---
+
+
+
+---
+
+## **🛠️ Technologies Used**  
+- **LLMs**: GPT-4, Claude, Mistral, LLaMA  
+- **TEE (Trusted Execution Environment)**: Intel SGX, AWS Nitro Enclaves  
+- **ZK-Proofs**: zk-SNARKs, zk-STARKs  
+- **Blockchain Storage**: Ethereum, Polygon  
+
+---
+
+## **📌 Future Improvements**  
+🚀 **Decentralized Oracle Integration** (Chainlink, Pyth, UMA)  
+🔐 **Enhanced Privacy with FHE (Fully Homomorphic Encryption)**  
+📊 **Multi-Layer Reputation Scoring for Data Sources**  
+
+---
+
+
+---
+
+Would you like me to add **a Python script to fetch & verify off-chain data**? 🚀
